@@ -30,15 +30,21 @@ public class Main {
                 System.out.println("Deposit money: ");
                 System.out.println("How much money do you want to deposit?");
                 int deposit = sc.nextInt();
-                user.deposit(deposit);
+                user.deposit(deposit);  // aktualizacja/podmina danych w klasie Account
                 System.out.println("Money after deposit:" + user.getBalance());
                 break;
             case 3:
                 System.out.println("Withdraw money: ");
                 System.out.println("How much do you want to withdraw?");
                 int withdraw = sc.nextInt();
-                user.withdraw(withdraw);
-                System.out.println("Money after withdraw: " + user.getBalance());
+                if (user.getBalance()>=withdraw){
+                    user.withdraw(withdraw); // aktualizacja/podmina danych w klasie Account
+                    System.out.println("Money after withdraw: " + user.getBalance());
+                }
+                else {
+                    System.out.println("We cant do this operation becouse your account balance is under withdraw value");
+                }
+
                 break;
 
         }
