@@ -22,6 +22,10 @@ public class Account {
         this.balance = balance + deposit;
     }
 
+    public void withdraw(int withdraw) { // void nic nie zwraca. Metoda zwraca z parametrów metody w "()"
+        this.balance = balance - withdraw;
+    }
+
         public float getBalance(){
             return balance;
 

@@ -32,10 +32,13 @@ public class Main {
                 int deposit = sc.nextInt();
                 user.deposit(deposit);
                 System.out.println("Money after deposit:" + user.getBalance());
-
                 break;
             case 3:
                 System.out.println("Withdraw money: ");
+                System.out.println("How much do you want to withdraw?");
+                int withdraw = sc.nextInt();
+                user.withdraw(withdraw);
+                System.out.println("Money after withdraw: " + user.getBalance());
                 break;
 
         }
