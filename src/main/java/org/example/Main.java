@@ -16,6 +16,8 @@ public class Main {
 
     Account user=new Account(name, surname);
 
+        System.out.println("Select operation:\n1.\n2.\n3.\n4.");
+
 
     }
 }
