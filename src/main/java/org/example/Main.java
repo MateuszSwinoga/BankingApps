@@ -16,7 +16,16 @@ public class Main {
 
     Account user=new Account(name, surname);
 
-        System.out.println("Select operation:\n1.\n2.\n3.\n4.");
+        System.out.println("Select operation:n1.User details\n2.Deposit money\n3.Withdraw money");
+        Scanner select = select.nextInt();
+
+        switch (select)
+        case 1:
+
+        case 2:
+
+        case 3:
+
 
 
     }
