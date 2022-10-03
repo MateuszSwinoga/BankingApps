@@ -28,6 +28,11 @@ public class Main {
                 break;
             case 2:
                 System.out.println("Deposit money: ");
+                System.out.println("How much money do you want to deposit?");
+                int deposit = sc.nextInt();
+                user.deposit(deposit);
+                System.out.println("Money after deposit:" + user.getBalance());
+
                 break;
             case 3:
                 System.out.println("Withdraw money: ");
