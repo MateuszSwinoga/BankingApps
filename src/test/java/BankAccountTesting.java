@@ -7,7 +7,7 @@ public class BankAccountTesting {
     public void whenUserDepositMoneyHeHaveMoreMoney(){ // metody testów nazywamy opisowo
         Account account = new Account("Mateusz", "Świnoga");
         account.deposit(100);
-        Assert.assertEquals(205, account.getBalance());  // porównanie
+        Assert.assertEquals(205, account.getBalance(), 0);  // porównanie
 
 
     }
